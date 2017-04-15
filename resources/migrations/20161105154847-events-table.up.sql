@@ -21,6 +21,8 @@ BEGIN
    || TG_TABLE_NAME
    || ', '''
    || TG_OP
+   || ' '
+   || OLD
    || '''';
  END IF;
  return new;
